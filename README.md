@@ -50,7 +50,7 @@ Load the data to data model
 
 Created dim_date table with date, month, FY (fiscal_year) columns.
 
-Created a calculated column in fact_sales_monthly as 
+Created a **calculated column** in fact_sales_monthly as 
 
 **Total_COGS** = fact_sales_monthly[freight_cost] + fact_sales_monthly[manufacturing_cost] 
 
