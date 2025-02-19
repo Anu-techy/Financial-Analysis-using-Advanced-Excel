@@ -1,5 +1,5 @@
 # Financial-Analysis-of-a-Hardware-company
-
+Track key performance indicators (KPIs) of the company
 **Aim**
 
 1. Track key performance indicators (KPIs) of the company
