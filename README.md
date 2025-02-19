@@ -108,7 +108,7 @@ In the **Power Pivot:**
                     
 Added conditional formatting and improved aesthetics
 
-======================================================================================
+=========================================================
 
 **P & L by Month Report Designing**
 
