@@ -108,11 +108,11 @@ In the **Power Pivot:**
                     
 Added conditional formatting and improved aesthetics
 
-=====================================================================================================
+======================================================================================
 
-** P & L by Month Report Designing**
+**P & L by Month Report Designing**
 
-Inorder to make this rreport, I should add months and quarters in Data Model
+Inorder to make this report, I should add months and quarters in Data Model
 
 So in power query, in dim_date table, we create month column as =FORMAT([date],"MMM")
 
