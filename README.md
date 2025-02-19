@@ -80,7 +80,7 @@ In the Power Pivot, Created the following DAX measures in the fact_sales_monthly
 
 **Measure 4:** GM % = DIVIDE([Gross Margin],[Net Sales],0)
 
-**Final P & L by Year Report Designing**
+**Final P & L by Fiscal Year Report Designing**
 
 In the **Power Pivot:**
 
@@ -108,6 +108,50 @@ In the **Power Pivot:**
                     
 Added conditional formatting and improved aesthetics
 
+=====================================================================================================
+
+** P & L by Month Report Designing**
+
+Inorder to make this rreport, I should add months and quarters in Data Model
+
+So in power query, in dim_date table, we create month column as =FORMAT([date],"MMM")
+
+we create quarter column as fy_month_no =MONTH(DATE(YEAR([date]),MONTH([date])+4,1))
+
+                            Quarter =  "Q" & ROUNDUP([fy_month_no]/3,0)
+
+
+In the **Power Pivot:**
+
+**Values:**
+
+                    Net Sales
+      
+                    COGS
+
+                    Gross Margin
+
+                    Gross Margin %
+                    
+**Filters:**           
+                    Region (dim_market)
+
+                    Market  (dim_market)
+      
+                    Division (dim_product)
+
+                    Customer (dim_customer)
+
+                    FY (dim_date)
+
+**Columns:**
+                    quarter (dim_date)
+
+                    month (dim_date)
+                    
+Added conditional formatting and improved aesthetics
+
+
 **Recommendations**
 
 Use Report to
@@ -117,5 +161,16 @@ Benchmarking against competitors and plan for budgeting and forecasting
 Align financial planning with strategic goals.
 
 Slice and dice data to drill down the hidden insights
+
+
+
+
+
+
+
+
+
+
+
 
 
