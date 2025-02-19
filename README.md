@@ -35,16 +35,24 @@ Fact table/Transaction table : fact_sales_monthly
 **Data Transformations in Power Query**
 
 Removed duplicate values
+
 Removed data with missing values (only 3 rows)
+
 Identified, replaced spelling mistakes in customer names
+
 Replaced nan category in market table to NA (North American Region) ater confirming with business owners
+
 Few rows have negative quantity , Replaced with positive after clear confirmation
+
 Named all the data transformation steps
+
 Load the data to data model
+
 Created dim_date table with date, month, FY (fiscal_year) columns.
+
 Created a calculated column in fact_sales_monthly as 
 
-Total_COGS = fact_sales_monthly[freight_cost] + fact_sales_monthly[manufacturing_cost] 
+**Total_COGS** = fact_sales_monthly[freight_cost] + fact_sales_monthly[manufacturing_cost] 
 
 The **Dim_Date** table helps in analysis by providing a structured way to categorize and group data based on time (e.g., by day, month, quarter, or year), enabling easier and more flexible time-based analysis, such as trend analysis, period-over-period comparisons, and time-based calculations (like YTD or MTD). Fiscal year of Atliq hardware is from september through August.
 
@@ -72,11 +80,11 @@ In the Power Pivot, Created the following DAX measures in the fact_sales_monthly
 
 **Measure 4:** GM % = DIVIDE([Gross Margin],[Net Sales],0)
 
-**Final P & L by Year Report**
+**Final P & L by Year Report Designing**
 
 In the **Power Pivot:**
 
-**Values: **
+**Values:**
 
                     Net Sales
       
@@ -86,7 +94,7 @@ In the **Power Pivot:**
 
                     Gross Margin %
                     
-**Filters: **           
+**Filters:**           
                     Region (dim_market)
 
                     Market  (dim_market)
