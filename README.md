@@ -1,4 +1,4 @@
-# Financial-Analysis-of-using-advanced-MS Excel
+# Financial-Analysis-using-advanced-MS Excel
 Track key performance indicators (KPIs) of the company
 **Aim**
 
